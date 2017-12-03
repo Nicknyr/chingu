@@ -1,8 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One');
+/*
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Cantarell', sans-serif;
+*/
+
+
   body {
     background-color: #FAFAFA;
-    font-family: 'Nunito Semibold';
+    font-family: 'Cantarell', sans-serif;
     text-align: center;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Fjalla One', sans-serif;
   }
 
   nav {
@@ -140,6 +151,7 @@
     }
   }
 
+
   footer {
     display: grid;
     grid-column: 1 / 13;
@@ -210,7 +222,7 @@
 
   main {
     grid-column: 1 / 13;
-    grid-row: 1 / 10;
+    grid-row: 1 / 7;
     text-align: center;
 
     .landing {
@@ -227,7 +239,7 @@
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 40px;
   grid-auto-rows: minmax(300px, auto);
-  grid-row: 10 / 12;
+  grid-row: 7 / 9;
   justify-self: center;
   grid-column: 2/-2;
 
@@ -236,13 +248,27 @@
   }
 }
 
+
   .info-section {
-    display: none;
+    //grid-template-columns: repeat(12, 4fr);
+    grid-column: 3 / 11;
+    grid-row: 9 / 11;
+
+
+    #left {
+      grid-column: 3 / 7;
+      //grid-gap: 40px;
+    }
+
+    #right {
+      grid-column: 7 / 11;
+    }
+
   }
 
   footer {
     grid-column: 1 / 13;
-    grid-row: 15 / 17;
+    grid-row: 11 / 13;
   }
 
 }
