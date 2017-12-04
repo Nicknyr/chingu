@@ -255,12 +255,66 @@
   }
 }
 
-  
+  #button-wrapper {
+    grid-row: 9 / 10;
+    grid-column: 6 / 8;
+
+
+    button {
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: 700;
+      text-align: center;
+      padding: 22px 50px;
+      border: 0;
+      margin: 50px 0;
+      text-transform: uppercase;
+      background-color: #2ecc71;
+      color: white;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #1abc9c;
+      }
+
+    }
+  }
+
+  .feature-boxes {
+    h3 {
+    //  padding: 1em;
+      font-size: 1.5em;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.2em;
+      padding: 30px;
+    }
+  }
+
+
+  #left {
+    grid-row: 10 / 12;
+    grid-column: 1 / 7;
+    //background-color: red;
+    //grid-gap: 20px;
+  }
+
+  #right {
+    grid-row: 10 / 12;
+    grid-column: 7 / 13;
+    //background-color: blue;
+  }
+
+
+
+
 
 
   footer {
     grid-column: 1 / 13;
-    grid-row: 11 / 13;
+    grid-row: 15 / 17;
   }
 
 }
