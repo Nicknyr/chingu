@@ -134,7 +134,7 @@
 
     button {
       font-size: 14px;
-      line-height: 19px;
+      line-height: 17px;
       font-weight: 700;
       text-align: center;
       padding: 22px 50px;
@@ -149,6 +149,29 @@
         background-color: #1abc9c;
       }
 
+    }
+  }
+
+  #about-us-h2 {
+    margin-top: 3em;
+    margin-bottom: 2.5em;
+  }
+
+  .review-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(300px, auto);
+    color: black;
+
+    .review {
+      background-color: #5FC1E6;
+      border-radius: 10px;
+
+      p {
+        padding: 20px;
+        color: white;
+      }
     }
   }
 
@@ -289,14 +312,18 @@
     //background-color: blue;
   }
 
+  #about-us-h2 {
+    display: none;
+  }
 
-
-
+  .review-section {
+    display: none;
+  }
 
 
   footer {
     grid-column: 1 / 13;
-    grid-row: 15 / 17;
+    grid-row: 18 / 20;
   }
 
 }
