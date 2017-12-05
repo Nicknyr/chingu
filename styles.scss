@@ -38,7 +38,7 @@
 
     .nav-sub-items {
       display: grid;
-      //grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
 
       ul:nth-child(even) {
@@ -236,6 +236,10 @@
     grid-column: 1 / 13;
     grid-row: 10 / 12;
     //background-color: #3bbced;
+
+    span {
+      display: none;
+    }
 
     hr {
       display: none;
@@ -445,13 +449,6 @@
     display: none;
   }
 
-  .review-section {
-    display: none;
-  }
-
-  .testimonials {
-    display: none;
-  }
 
   .press-section {
     display: none;
@@ -462,6 +459,14 @@
   }
 
 
+  .review-section {
+    display: none;
+  }
+
+  .testimonials {
+    display: none;
+  }
+
   footer {
     grid-template-columns: repeat(4, 3fr);
     grid-row: 18 / 20;
@@ -469,7 +474,23 @@
     grid-column: 1/-1;
     grid-gap: 0px;
 
+
     div {
+      h3 {
+        font-size: 1em;
+      }
+
+      i {
+        &:hover {
+          color: black;
+        }
+      }
+
+      a {
+        &:hover {
+          color: black;
+        }
+      }
 
       hr {
         border: none;
@@ -479,10 +500,15 @@
         float: left;
         display: inherit;
       }
+
+      span {
+        display: inherit;
+      }
     }
 
     .talent-companies {
       width: 100%;
+
 
       li:nth-child(even) {
         display: block;
@@ -500,6 +526,8 @@
         text-align: left;
       }
     }
+
+
 
   }
 

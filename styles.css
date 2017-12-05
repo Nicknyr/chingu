@@ -26,6 +26,7 @@ nav {
     display: none; }
   nav .nav-sub-items {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px; }
     nav .nav-sub-items ul:nth-child(even) {
       padding-left: 8em; }
@@ -162,6 +163,8 @@ footer {
   display: grid;
   grid-column: 1 / 13;
   grid-row: 10 / 12; }
+  footer span {
+    display: none; }
   footer hr {
     display: none; }
   footer h3 {
@@ -293,16 +296,16 @@ footer {
   #about-us-h2 {
     display: none; }
 
-  .review-section {
-    display: none; }
-
-  .testimonials {
-    display: none; }
-
   .press-section {
     display: none; }
 
   .video-section {
+    display: none; }
+
+  .review-section {
+    display: none; }
+
+  .testimonials {
     display: none; }
 
   footer {
@@ -311,12 +314,20 @@ footer {
     justify-self: center;
     grid-column: 1/-1;
     grid-gap: 0px; }
+    footer div h3 {
+      font-size: 1em; }
+    footer div i:hover {
+      color: black; }
+    footer div a:hover {
+      color: black; }
     footer div hr {
       border: none;
       height: 1px;
       background-color: lightgrey;
       width: 90%;
       float: left;
+      display: inherit; }
+    footer div span {
       display: inherit; }
     footer .talent-companies {
       width: 100%; }
